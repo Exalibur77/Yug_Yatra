@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Roboto:wght@400;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --primary-text-color: #183b56;
+    --secondary-text-color:#577592;
+    --accent-color: #2294ed;
+    --accent-color-dark:#1d69a3;
+    --padding-inline-section: 20px;
+
+}
+
+body{
+    font-family: "Poppins" , sans-serif;
+    color: var(--primary-text-color);
+}
+
+p{
+    font-family: "Roboto" , sans-serif;
+    color: var(--secondary-text-color);
+    line-height: 1.4rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    max-width: 1180px;
+    margin-inline: auto;
+    overflow: hidden;
+}
+
+nav{
+    background-color: #f3faff;
+    box-shadow: 0px 0px 4px #bbd0e2;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    left: 0;
+    right: 0;
+}
+
+.company-logo{
+    height: 250px;
+    width: 150px;
+}
+
+.main-nav{
+    justify-content: space-between;
+    padding-block: 8px;
+    height: 70px;
+}
+
+.nav-item.active{
+    color: var(--accent-color);
+}
+
+.nav-links ul{
+    gap: 25px;
+}
+
+.hover-links{
+    cursor: pointer;
+}
+
+.hover-links:hover{
+    color: var(--secondary-text-color);
+}
+
+.hover-links:active{
+    color: red;
+}
+
+.search-bar{
+    height: 32px;
+    gap: 8px;
+}
+
+.news-input{
+    border-radius: 4px;
+    font-family: "Poppins" , sans-serif;
+    width: 200px;
+    height: 100%;
+    border: 2px solid #bbd0e2;
+    padding-inline: 15px;
+}
+
+.search-button{
+    cursor: pointer;
+    background-color: var(--accent-color);
+    font-family: "Poppins" , sans-serif;
+    border-radius: 4px;
+    height: 100%;
+    width: 80px;
+    border: none;
+    color: white;
+}
+
+.search-button:hover{
+    background-color:var(--accent-color-dark);
+}
+
+main{
+    padding: 20px;
+    margin-top: 80px;
+}
+
+
+.cards-container{
+    justify-content: space-between;
+    row-gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.card{
+    width: 360px;
+    height: 500px;
+    box-shadow: 0 0 4px #d4ecff;
+    cursor: pointer;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: #fff; 
+    transition: all 0.2s ease;
+}
+
+.card:hover{
+    box-shadow: 1px 1px 8px #d4ecff;
+    background-color: #f9fdff;
+    transform: translateY(-2px);
+}
+
+.news-image{
+    width: 100%;
+    height: 200px;
+}
+
+.news-source{
+    padding-block:10px;
+}
+
+.card-content{
+    padding: 12px;
+}

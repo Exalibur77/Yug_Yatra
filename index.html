@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome : Yug Yatra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav>
+        <div class="main-nav container flex">
+
+            <a href="#" class="company-logo" onclick="reload()">
+                <img src="assets/CompanyLogo_400x300.png" alt="logo" class="company-logo">
+                <!-- Company Logo -->
+            </a>
+    
+            <div class="nav-links ">
+
+                <ul class="flex ">
+                    <li class="nav-item hover-links" id="ipl" onclick="onNavItemClick('ipl')">IPL</li>
+                    <li class="nav-item hover-links" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                    <li class="nav-item hover-links" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                    <li class="nav-item hover-links" id="health" onclick="onNavItemClick('health')">Health</li>
+
+                </ul>
+
+
+             </div>
+    
+            <div class="search-bar flex">
+
+                <input type="text" class="news-input" id="news-input" placeholder="e.g. Science">
+                <button class="search-button" id="search-button">Search</button>
+                
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <main>
+
+        <div class="cards-container container flex" id="cards-container">
+
+        </div>
+
+    </main>
+
+    <template id="template-news-card">
+
+        <div class="card">
+
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="" id="news-image" class="news-image">
+            </div>
+
+            <div class="card-content">
+                <h3 class="news-title" id="news-title">This is heading</h3>
+                <h6 class="news-source" id="news-source">End Gadget  26/08/2023</h6>
+                <p class="news-description" id="news-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus rem obcaecati molestias recusandae nihil voluptatem, ut ex voluptates nulla.</p>
+            </div>
+
+        </div>
+
+    </template>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
